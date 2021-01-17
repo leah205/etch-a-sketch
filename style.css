@@ -1,0 +1,44 @@
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 2px solid black;
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    background: white;
+}
+.newSquares{
+    max-width: 100%;
+}
+
+.square{
+width: auto-fill;
+height: auto-fill;
+
+ 
+}
+h1{
+    max-width: 20vw;
+    margin: auto;
+    font-size: 4em;
+    color: lightCoral;
+}
+.blue{
+    background: blue;
+}
+button{
+    width: 10vw;
+    height: 10vh;
+    margin: 2% auto 2% 45%;
+    background: lightCoral;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 10%;
+}
+.para{
+    color: red;
+    margin: auto;
+    width: 20%;
+    font-size: 1.5em;
+    text-align: center;
+}
