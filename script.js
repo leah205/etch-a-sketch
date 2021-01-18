@@ -1,8 +1,14 @@
 
 const para = document.querySelector('.para')
 let grid = document.querySelector('.grid');
-let squares = document.querySelectorAll('.square');
-let squaresArr = Array.from(squares)
+
+for(i=0;i<16;i++){
+    initialDiv = document.createElement('div');
+    initialDiv.classList.add('square');
+    grid.appendChild(initialDiv);
+    }
+    let squares = document.querySelectorAll('.square');
+let squaresArr = Array.from(squares);
 squares.forEach((square) => { 
 square.addEventListener('mouseenter', function blue(){
     square.classList.add('blue');
@@ -18,20 +24,21 @@ btn.addEventListener('click', () => {
     function clearGrid(){
         squares.forEach((square) => {
         square.classList.remove('blue');
-        square.classList.add('square')
+        square.classList.add('square');
     
     })
        
     }
       
   function newGrid(){
+      para.textContent = '';
     let numberSquares = Array.from(squares).length;
       let gridPreference = prompt('Pick your grid preference:', '4');
       let totalGrid = gridPreference * gridPreference;
       grid.style.cssText = `grid-template-columns: repeat(${gridPreference}, 1fr);
       grid-template-rows: repeat(${gridPreference}, 1fr);`
       if(gridPreference>100){
-           para.textContent = 'Please enter a number less than 100';
+           para.textContent = 'Grid size can not exceed 100';
       }
       else if(totalGrid>numberSquares){
           for(let i = numberSquares; i<totalGrid; i++){
