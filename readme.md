@@ -1,0 +1,2 @@
+I ran into a lot of problems in this project. The borders were giving me too much trouble when the grid was
+resized, so I decided to ditch them. Right now I feel like my code is really messy, but it's working fine so I don't want to mess it up.
